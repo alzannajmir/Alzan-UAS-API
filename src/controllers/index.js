@@ -1,5 +1,5 @@
-const handphone = require('./controller-handphone');
+const alzan_najmi = require('./controller-handphone');
 
 module.exports = {
-    handphone
+    alzan_najmi
 };
