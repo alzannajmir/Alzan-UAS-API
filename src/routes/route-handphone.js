@@ -1,21 +1,21 @@
 const router = require('express').Router();
 const {
-    handphone
+    alzan_najmi
 } = require('../controllers');
 
 // GET localhost:8080/handphone =› Ambil data semua handphone
-router.get('/handphone', handphone.getDataHandphone);
+router.get('/alzan_najmi', handphone.getDataHandphone);
 
 // GET localhost:8080/handphone/2=›Ambildatasemuahandphoneberda
-router.get('/handphone/:id_HP', handphone.getDataHandphoneByID);
+router.get('/alzan_najmi/:id_HP', handphone.getDataHandphoneByID);
 
 // POST localhost:8080/handphone/add=›Tambahdatahandphonekedatat
-router.post('/handphone/add', handphone.addDataHandphone);
+router.post('/alzan_najmi/add', handphone.addDataHandphone);
 
 // POST localhost:8080/handphone/2=›Edit data handphone
-router.post('/handphone/edit', handphone.editDataHandphone);
+router.post('/alzan_najmi/edit', handphone.editDataHandphone);
 
 // POST localhost:8080/handphone/delete=>Delete data handphone
-router.post('/handphone/delete/', handphone.deleteDataHandphone);
+router.post('/alzan_najmi/delete/', handphone.deleteDataHandphone);
 
 module.exports = router;
